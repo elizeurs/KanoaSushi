@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
+    
+    UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+    
+    
+//    hide back word on navigation bar
+    let BarButtonItemAppearance = UIBarButtonItem.appearance()
+    BarButtonItemAppearance.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear], for: .normal)
+    
     return true
   }
 
